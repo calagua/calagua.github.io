@@ -1,0 +1,206 @@
+/* Resetear estilos por defecto del navegador */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado y la navegación */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative; /* Añade posición relativa */
+    z-index: 2; /* Coloca el contenido sobre la franja */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para el fondo del encabezado */
+/* Estilos de encabezado */
+header {
+    position: relative;
+    background-image: url('https://i.pinimg.com/736x/8d/a3/95/8da39571da2627a7507ce8313464a77b.jpg'); /* Cambia la URL por la nueva imagen */
+    background-size: cover;
+    background-position: top left; /* Posición en la esquina superior izquierda */
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+/* ... (otros estilos) ... */
+
+
+/* Estilos para la franja negra y la barra de navegación lateral */
+.black-stripe {
+    background-color: black;
+    width: 10%; /* Ancho de la franja según tus preferencias */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Coloca la franja detrás del contenido */
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%; /* Mismo ancho que la franja negra */
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Coloca la barra lateral delante de la franja */
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav li {
+    margin-bottom: 20px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para las secciones de contenido */
+section {
+    margin-bottom: 40px;
+}
+
+section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Otros estilos necesarios */
+/* ... (otros estilos) ... */
+
+/* Estilos de barra de navegación lateral */
+
+.side-nav a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: rgb(0, 0, 0); /* Cambia el color del botón a negro (RGB: 0, 0, 0) */
+}
+
+.side-nav a:hover {
+    background-color: rgb(51, 51, 51); /* Cambia el color al pasar el mouse (RGB: 51, 51, 51) */
+    border-color: white;
+}
+/* ... (otros estilos) ... */
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav li {
+    margin-bottom: 20px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent; /* Agrega un borde transparente por defecto */
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.side-nav a:hover {
+    background-color: #333; /* Cambia el fondo al pasar el mouse */
+    border-color: white; /* Cambia el color del borde al pasar el mouse */
+}
+/* Estilos de contenido principal */
+main {
+    margin-left: 220px; /* Ancho de la barra lateral más un espacio adicional */
+    padding-top: 40px; /* Evita que el contenido se oculte detrás del encabezado */
+    position: relative; /* Añade posición relativa */
+}
+
+/* Estilos de franja negra */
+.black-stripe {
+    /* ... (otros estilos) ... */
+    z-index: 1; /* Coloca la franja detrás del contenido */
+}
+
+/* ... (otros estilos) ... */
+
+/* Estilos para el logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px; /* Ajusta el ancho según tu logo */
+    height: auto;
+    z-index: 3; /* Coloca el logo delante de la franja y la barra lateral */
+}
+/* ... (otros estilos) ... */
+
+/* Estilos para la cuadrícula de imágenes */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre imágenes */
+}
+
+.image {
+    flex-basis: calc(33.33% - 20px); /* Ancho de cada imagen en la cuadrícula */
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.image p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image:hover img {
+    transform: scale(1.1); /* Zoom en hover */
+}
+
+.image:hover p {
+    opacity: 1;
+}
